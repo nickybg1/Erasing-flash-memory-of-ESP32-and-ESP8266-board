@@ -1,0 +1,15 @@
+Erasing flash memory of ESP32 and ESP8266 board with ESPTOOL
+============================================================
+
+From command line:
+------------------
+py -3.9 -m pip install esptool
+
+py -3.9 -m esptool
+
+py -3.9 -m esptool --chip ESP8266 --port COM<port number> erase_flash
+
+Example:
+py -3.9 -m esptool --chip ESP8266 --port COM3 erase_flash
+
+/The port number is checked in the Arduino IDE: Tools -> Port.../
